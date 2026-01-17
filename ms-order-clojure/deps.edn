@@ -1,0 +1,25 @@
+{:paths ["src" "resources"]
+ 
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        
+        ;; MongoDB Driver - driver oficial do MongoDB para Clojure/Java
+        org.mongodb/mongodb-driver-sync {:mvn/version "4.11.1"}
+        
+        ;; Ring - biblioteca base para servidores HTTP em Clojure (similar ao Jetty/Tomcat)
+        ring/ring-core {:mvn/version "1.10.0"}
+        ring/ring-jetty-adapter {:mvn/version "1.10.0"}
+        ring/ring-json {:mvn/version "0.5.1"}
+        
+        ;; Compojure - biblioteca para roteamento HTTP (similar ao Spring MVC)
+        compojure/compojure {:mvn/version "1.7.0"}
+        
+        ;; Cheshire - biblioteca para JSON (similar ao Jackson)
+        cheshire/cheshire {:mvn/version "5.12.0"}
+        
+        ;; Environ - para gerenciar variáveis de ambiente e configurações
+        environ/environ {:mvn/version "1.2.0"}}
+ 
+ :aliases {:run {:main-opts ["-m" "ms-order.core"]}
+           :test {:extra-paths ["test"]
+                  :extra-deps {lambdaisland/kaocha {:mvn/version "1.87.1366"}}
+                  :main-opts ["-m" "kaocha.runner"]}}}

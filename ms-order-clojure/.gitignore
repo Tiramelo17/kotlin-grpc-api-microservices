@@ -1,0 +1,27 @@
+# Clojure
+target/
+.cpcache/
+.nrepl-port
+.lein-repl-history
+.lein-failures
+.lein-env
+.rebel_readline_history
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
