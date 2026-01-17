@@ -1,0 +1,8 @@
+{:app {:name "ms-order-clojure"
+       :port 8082}
+ 
+ :mongodb {:uri "mongodb://localhost:27017"
+           :database "order_db"}
+ 
+ :grpc {:server {:address "localhost"
+                 :port 9090}}}
